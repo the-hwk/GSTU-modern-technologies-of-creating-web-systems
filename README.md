@@ -1,1 +1,1 @@
-# modern-technologies-of-creating-web-systems
+# Современные технологии создания web-систем
