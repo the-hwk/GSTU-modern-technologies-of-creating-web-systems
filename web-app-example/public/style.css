@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Magistral';
+}
+
+::-webkit-scrollbar {
+    background: none;
+    width: 0.1em;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(246, 249, 255);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto;
+
+    background: rgb(32, 33, 37);
+    overflow: hidden;
+}
+
+#data-container {
+    display: grid;
+    row-gap: 1.5em;
+
+    padding: 3em;
+
+    overflow: auto;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: "title button"
+                         "info info";
+    row-gap: 0.5em;
+    padding: 1.5em;
+    background: rgb(42, 43, 48);
+    border-radius: 1em;
+}
+
+.card > h1 {
+    grid-area: title;
+    margin-left: 1em;
+    color: rgb(246, 249, 255);
+}
+
+.card > button {
+    grid-area: button;
+    width: 5em;
+    height: 2.3em;
+    background: rgb(232, 71, 104);
+    color: rgb(32, 33, 37);
+    border-radius: 0.7em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    align-self: center;
+    justify-self: end;
+}
+
+.card > span {
+    grid-area: info;
+    color: rgb(246, 249, 255);
+}
